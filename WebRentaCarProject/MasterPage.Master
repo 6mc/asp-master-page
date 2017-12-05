@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebRentaCarProject.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 83px;
+            width: 239px;
+            margin-left: 3px;
+            margin-top: 0px;
+        }
+        .auto-style3 {
+            width: 70px;
+            height: 6px;
+        }
+        .auto-style4 {
+            margin-left: 0px;
+        }
+        .auto-style5 {
+            width: 1100px;
+        }
+        .auto-style6 {
+            width: 202px;
+            height: 6px;
+        }
+        .auto-style7 {
+            width: 444px;
+            height: 6px;
+        }
+        .auto-style8 {
+            margin-left: 4px;
+        }
+        .auto-style9 {
+            height: 23px;
+        }
+        </style>
+</head>
+<body background="images/carback.jpg" style ="height:100%; margin:0; padding:0;">
+    <form id="form1" runat="server">
+    <table style="margin: 0;width:100%; position: inherit;" class="auto-style5">
+      <tr style ="width:1100px;"> 
+          <td class="auto-style3" style="background-color: #000000">
+              <img src ="images/rent a car logo.jpg" class="auto-style1" /></td>
+          <td class="auto-style7" style="background-position: inherit; background-color: #000000; font-family: Arial; font-size: x-large; font-weight: normal; font-style: oblique; font-variant: normal; text-transform: uppercase; color: #808000; background-image: none; text-align: center; text-decoration: blink;">
+              CAR RENTAL COMPANY</td>
+          <td style="background-color: #000000; text-align:right" class="auto-style6">
+              <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style4" Height="51px" ImageUrl="~/images/if_facebook_circle_color_107175.png" Width="56px" />&nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="45px" ImageUrl="~/images/if_social_style_1_googleplus_393279.png" Width="50px" />&nbsp;&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="51px" ImageUrl="~/images/if_youtube_circle_color_107167.png" CssClass="auto-style8" Width="54px" /></td>
+      </tr>
+        <tr style ="width:1100px;height:40px">
+            <td colspan="3" style="background-color: #808000">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/index.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="SERVICES" Value="SERVICES"></asp:MenuItem>
+                        <asp:MenuItem Text="ABOUT US" Value="ABOUS US"></asp:MenuItem>
+                        <asp:MenuItem Text="LOGIN" Value="LOGIN"></asp:MenuItem>
+                        <asp:MenuItem Text="SIGN UP" Value="SIGN UP"></asp:MenuItem>
+                        <asp:MenuItem Text="CONTACT US" Value="CONTACT US"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#999966" />
+                    <StaticMenuItemStyle BackColor="Black" CssClass="  " Font-Bold="True" Font-Size="Large" ForeColor="Olive" HorizontalPadding="30px" />
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr style ="width:1100px">
+            <td colspan ="3" class="auto-style9">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                   </asp:ContentPlaceHolder>
+
+            </td>
+        </tr>
+        <tr style ="width:1100px;height:20px">
+            <td colspan="3">
+                            </td>
+        </tr>
+    </table>
+        
+    
+    </form>
+</body>
+</html>
