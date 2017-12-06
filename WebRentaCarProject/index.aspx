@@ -1,21 +1,38 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebRentaCarProject.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+    .auto-style10 {
+        color: #FFFFFF;
+        font-size: xx-large;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <p style="height: 142px">
-        &nbsp;</p>
-    <p style="height: 142px">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="34px" ImageUrl="https://image.flaticon.com/icons/png/512/64/64113.png" Width="48px" />
-        <asp:TextBox ID="TextBox1" runat="server" PlaceHolder="Istanbul" Height="36px" Width="170px"></asp:TextBox>
+    <asp:Panel ID="Panel1" runat="server">
+    <p style="height: 0px">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p style="height: 38px">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p style="height: 38px">
+            ,,</p>
+        <p style="height: 38px">
+            &nbsp;</p>
+        <p style="height: 38px">
+            &nbsp; <span class="auto-style10"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DISCOVER THE WORLD </strong></span>
+        </p>
+    <p style="height: 142px; text-align: center;">
+        <asp:Image ID="Image1" runat="server" Height="34px" ImageUrl="~/images/location.png" Width="48px" />
+        <asp:TextBox ID="TextBox1" runat="server" Height="36px" PlaceHolder="Istanbul" style="font-size: x-large" Width="170px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-        <asp:Image ID="Image2" runat="server" Height="38px" ImageUrl="https://d30y9cdsu7xlg0.cloudfront.net/png/123953-200.png" Width="46px" />
-        <asp:TextBox ID="TextBox2" runat="server" Height="39px" style="margin-top: 0px" TextMode="Date" Width="205px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
-        <asp:Image ID="Image3" runat="server" Height="34px" ImageUrl="https://d30y9cdsu7xlg0.cloudfront.net/png/143423-200.png" Width="43px" />
-        <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="176px" TextMode="Date"></asp:TextBox>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Image ID="Image2" runat="server" Height="38px" ImageUrl="~/images/calendar-512.png" Width="45px" />
+        <asp:TextBox ID="TextBox2" runat="server" Height="39px" style="margin-top: 0px; font-size: x-large;" TextMode="Date" Width="205px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
+        <asp:Image ID="Image3" runat="server" Height="34px" ImageUrl="~/images/return.png" Width="38px" />
+        <asp:TextBox ID="TextBox3" runat="server" Height="38px" style="font-size: x-large; margin-top: 0px" TextMode="Date" Width="185px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" ForeColor="#CCFFCC" Height="42px" OnClick="Button1_Click" style="color: #000066; font-size: x-large" Text="Search" Width="164px" />
     </p>
+</asp:Panel>
     
 </asp:Content>
